@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  
+    @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Figtree:wght@600;800&display=swap');
+   body{
+    background-color:  hsl(47, 88%, 63%);
+
+    font-family: Figtree;
+   }
+   .card-containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   .text-gray{
+    color:hsl(0, 0%, 50%);
+   }
+   .card{
+     background-color: #fff;
+     border-radius: 20px;
+     width: 25%;
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+     border: 1px solid hsl(0, 0%, 7%);
+     box-shadow: 5px 5px 0px 0px  hsl(0, 0%, 7%);
+
+   }
+   .card img{
+    display: inline-block;
+    border-radius: 20px;
+   }
+   .card .badge{
+    background-color:hsl(47, 88%, 63%); 
+    color: hsl(0, 0%, 7%);
+    display: inline-block;
+    margin-top: 10px ;
+    margin-bottom: 5px;
+    font-size: 14px;
+     padding: 0.4rem;
+     font-weight: 800;
+    
+   }
+   .card footer{
+     display: flex;
+     gap: 10px;
+   }
+   .mentor-footer{
+    text-align: center;
+    color: #fff;
+   }
+   .mentor-footer a{
+     text-decoration: none;
+     color:hsl(0, 0%, 7%);
+   }
+  
+  </style>
+</head>
+<body>
+
+
+  <main class="card-containers">
+  <section class="card">
+    <img src="assets/images/illustration-article.svg" />
+    <div>
+    <span class="badge">Learning</span>
+    </div>
+    <p > Published 21 Dec 2023</p>
+    <h2> HTML & CSS foundations </h2>
+    <p class="text-gray">  These languages are the backbone of every website, defining structure, content, and presentation.
+      These languages are the backbone of every website, defining structure, content, and presentation.
+    </p>
+
+    <footer>
+      <img src="assets/images/image-avatar.webp" />
+       <h3 >  Greg Hooper</h3>
+    </footer>
+  </section>
+</main>
+
+
+  
+<footer class="mentor-footer">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Mohamed Beshri Amer</a>.
+</footer>
+  
+</body>
+</html>
